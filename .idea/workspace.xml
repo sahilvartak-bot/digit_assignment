@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b014b125-e3a0-4ae6-97cb-5fddb4bd92a1" name="Changes" comment="Assignment Implementation">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/main/V20250212144500__tables_ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/config/Configuration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/config/MainConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/config/ServiceConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/kafka/AdvocateKafkaProducer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/kafka/Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/repository/AdvocateClerkRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/repository/AdvocateRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/repository/AdvocateRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/repository/AdvocateRowMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/repository/IDGenRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/repository/ServiceRequestRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/service/AdvocateClerkService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/service/AdvocateEnrichmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/service/AdvocateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/service/AdvocateServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/service/AdvocateValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/util/IdgenUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/util/MdmsUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/util/ResponseInfoFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/util/UrlShortenerUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/util/UserUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/util/WorkflowUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/controllers/AdvocateApiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/Advocate$AdvocateBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/Advocate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateClerk$AdvocateClerkBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateClerk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateClerkRequest$AdvocateClerkRequestBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateClerkRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateClerkResponse$AdvocateClerkResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateClerkResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateRequest$AdvocateRequestBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateResponse$AdvocateResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateSearchCriteria$AdvocateSearchCriteriaBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateSearchCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateSearchRequest$AdvocateSearchRequestBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateSearchRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateVerificationRequest$AdvocateVerificationRequestBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AdvocateVerificationRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AllOfPaginationOrder$AllOfPaginationOrderBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/AllOfPaginationOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/Pagination$PaginationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/digit/academy/tutorial/web/models/Pagination.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/digit_assignment-1.0.0.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-digit.academy.tutorial.web.repository.AdvocateRepositoryTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-digit.academy.tutorial.web.service.AdvocateServiceTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/digit.academy.tutorial.web.repository.AdvocateRepositoryTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/digit.academy.tutorial.web.service.AdvocateServiceTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/digit/TestConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/digit/academy/tutorial/web/controllers/AdvocateApiControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/digit/academy/tutorial/web/repository/AdvocateRepositoryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/digit/academy/tutorial/web/service/AdvocateServiceTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2spx31x6K6cyy0QyhbTvUEgC8kQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "JUnit.AdvocateRepositoryTest.executor": "Run",
+    "JUnit.AdvocateRepositoryTest.testSearchAdvocates.executor": "Run",
+    "JUnit.AdvocateServiceTest.executor": "Run",
+    "JUnit.AdvocateServiceTest.testCreateAdvocate.executor": "Run",
+    "Maven.digit_assignment [clean,install].executor": "Run",
+    "Maven.digit_assignment [compile].executor": "Run",
+    "Maven.digit_assignment [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/bhcp0175/Downloads/digit_assignment/api_test"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api_test" />
+      <recent name="$PROJECT_DIR$/src/main/resources/db/migration/main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="digit.academy.tutorial" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="digit.academy.tutorial.Main" />
+      <module name="digit_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="digit.academy.tutorial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdvocateRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="digit_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="digit.academy.tutorial.web.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="digit.academy.tutorial.web.repository" />
+      <option name="MAIN_CLASS_NAME" value="digit.academy.tutorial.web.repository.AdvocateRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdvocateRepositoryTest.testSearchAdvocates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="digit_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="digit.academy.tutorial.web.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="digit.academy.tutorial.web.repository" />
+      <option name="MAIN_CLASS_NAME" value="digit.academy.tutorial.web.repository.AdvocateRepositoryTest" />
+      <option name="METHOD_NAME" value="testSearchAdvocates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdvocateServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="digit_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="digit.academy.tutorial.web.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="digit.academy.tutorial.web.service" />
+      <option name="MAIN_CLASS_NAME" value="digit.academy.tutorial.web.service.AdvocateServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdvocateServiceTest.testCreateAdvocate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="digit_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="digit.academy.tutorial.web.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="digit.academy.tutorial.web.service" />
+      <option name="MAIN_CLASS_NAME" value="digit.academy.tutorial.web.service.AdvocateServiceTest" />
+      <option name="METHOD_NAME" value="testCreateAdvocate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AdvocateRepositoryTest" />
+        <item itemvalue="JUnit.AdvocateRepositoryTest.testSearchAdvocates" />
+        <item itemvalue="JUnit.AdvocateServiceTest.testCreateAdvocate" />
+        <item itemvalue="JUnit.AdvocateServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b014b125-e3a0-4ae6-97cb-5fddb4bd92a1" name="Changes" comment="" />
+      <created>1739166115003</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739166115003</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Assignment Implementation">
+      <option name="closed" value="true" />
+      <created>1739437735974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739437735975</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Assignment Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment Implementation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/digit/academy/tutorial/web/controllers/AdvocateApiController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/digit/academy/tutorial/service/AdvocateValidator.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/digit/academy/tutorial/util/MdmsUtil.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
