@@ -16,6 +16,8 @@ public interface AdvocateService {
     // Updates an existing advocate record
     Advocate updateAdvocate(Advocate advocate, RequestInfo requestInfo);
 
+    void deleteAdvocate(UUID advocateId, RequestInfo requestInfo);
+
     // Fetch advocate details by ID
     Optional<Advocate> getAdvocateById(UUID id);
 

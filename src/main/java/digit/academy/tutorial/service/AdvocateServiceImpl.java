@@ -49,9 +49,25 @@ public class AdvocateServiceImpl implements AdvocateService {
     public Advocate updateAdvocate(Advocate advocate, RequestInfo requestInfo) {
         advocateValidator.validateUpdateRequest(advocate, requestInfo);
         advocateEnrichmentService.enrichUpdateRequest(advocate, requestInfo);
-        advocateRepository.update(advocate, requestInfo);
+
+        // ✅ Send update event to Kafka (Persister will handle DB update)
+        advocateKafkaProducer.sendAdvocateUpdateEvent(advocate);
+
         return advocate;
     }
+
+    @Override
+    public void deleteAdvocate(UUID advocateId, RequestInfo requestInfo) {
+        Optional<Advocate> advocate = advocateRepository.findById(advocateId);
+
+        if (advocate.isPresent()) {
+            // ✅ Send delete event to Kafka (Persister will handle DB delete)
+            advocateKafkaProducer.sendAdvocateDeleteEvent(advocate.get());
+        } else {
+            throw new IllegalArgumentException("Advocate not found with ID: " + advocateId);
+        }
+    }
+
 
     @Override
     public Optional<Advocate> getAdvocateById(UUID id) {
@@ -100,7 +116,7 @@ public class AdvocateServiceImpl implements AdvocateService {
         smsRequest.put("applicationNumber", applicationNumber);
         smsRequest.put("message", message);
 
-        restTemplate.postForObject("https://digit.org/sms/send", smsRequest, String.class);//todo check
+        restTemplate.postForObject("https://digit.org/sms/send", smsRequest, String.class);
     }
 
 
